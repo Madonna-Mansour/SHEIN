@@ -28,17 +28,17 @@ const Nav = () => {
   return (
     <div className='flex justify-between items-center p-4 font-bold border border-b'>
       <div>
-        <h1 className='text-[35px]'>SHEIN</h1>
+        <h1 className='text-[35px] xs:text-[20px] md:text-[35px]'>SHEIN</h1>
       </div>
 
       <div className="flex">
         <input
           value={searchTerm}
           onChange={(e) => dispatch(setSearchTerm(e.target.value))}
-          className='w-[400px] h-10 border border-black'
+          className='w-[400px] h-10 p-4 border border-black  xs:w-[90px] md:w-[400px]'
           type="text"
         />
-        <button className='w-[40px] text-white flex justify-center items-center text-[23px] h-10 bg-black'>
+        <button className='w-[40px]  text-white flex justify-center items-center text-[27px] h-10 bg-black'>
           <IoIosSearch />
         </button>
       </div>
@@ -62,10 +62,10 @@ const Nav = () => {
         <div>
           <Link to={"/favorit"}><MdFavoriteBorder /></Link>
         </div>
-        <div className="mx-4">
+        <div className="mx-4 hidden md:flex">
           <RiCustomerService2Fill />
         </div>
-        <div>
+        <div className='hidden md:flex'>
           <TbWorld />
         </div>
       </div>

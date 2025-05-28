@@ -24,7 +24,7 @@ const Layout = ()=>{
 
 
 const App = () => {
-   
+     
 
   const router = createBrowserRouter(createRoutesFromElements(
     <Route >
@@ -45,7 +45,7 @@ const App = () => {
   return (
     <div>
       <RouterProvider router={router} />
-
+       
       
     </div>
   )
