@@ -22,7 +22,7 @@ const Product = () => {
   const favorites = useSelector((state) => state.appReducer.favorit);
 
   return (
-    <div className=''>
+    <div className='mt-[80px]'>
          {!searchTerm && (
             <div className='h-[600px] bg-cover text-white' style={{backgroundImage: `url(${imgg})`, backgroundRepeat:"no-repeat"}}>
               <div className="pt-[270px] ps-[100px]">

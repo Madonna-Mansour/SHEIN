@@ -26,16 +26,16 @@ const Nav = () => {
   };
 
   return (
-    <div className='flex justify-between items-center p-4 font-bold border border-b'>
+    <div className='fixed top-0 w-[100%] bg-white flex justify-between items-center p-4 font-bold border border-b'>
       <div>
         <h1 className='text-[35px] xs:text-[20px] md:text-[35px]'>SHEIN</h1>
       </div>
 
-      <div className="flex">
+      <div className="flex ">
         <input
           value={searchTerm}
           onChange={(e) => dispatch(setSearchTerm(e.target.value))}
-          className='w-[400px] h-10 p-4 border border-black  xs:w-[90px] md:w-[400px] '
+          className='w-[400px] h-10 p-4 border border-black  xs:w-[90px] md:w-[400px] rounded-none'
           type="text"
         />
         <button className='w-[40px]  text-white flex justify-center items-center text-[27px] h-10 bg-black'>
