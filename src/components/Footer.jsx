@@ -77,7 +77,7 @@ const Footer = () => {
           <div className="">
             <h1 className='mb-2'>Sign up for SheIn style news</h1>
             <div className="flex ">
-              <input type="text" className='border border-black p-2 w-[80%]' placeholder='Your email address' />
+              <input type="text" className='border border-black p-2 w-[80%] rounded-none' placeholder='Your email address' />
               <button className='bg-black text-white w-40 '>Subscribe</button>
             </div>
             <p className='my-8'>By clicking the SUBSCRIBE button, you are agreeing to our Privacy & Cookie Policy </p>
