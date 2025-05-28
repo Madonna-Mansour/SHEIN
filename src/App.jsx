@@ -1,6 +1,6 @@
 import React from 'react'
 import { createBrowserRouter, createRoutesFromElements, Outlet, Route , RouterProvider} from 'react-router-dom'
-import { ProductsData} from './api/api'
+import { ProductsData} from './api/API'
 import Home from './pages/Home'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
