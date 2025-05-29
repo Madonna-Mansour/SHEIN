@@ -16,7 +16,7 @@ const Layout = ()=>{
     <>
         <Nav />
         <Outlet />
-        <Footer />
+        {/* <Footer /> */}
     </>
   )
 }
@@ -30,13 +30,13 @@ const App = () => {
     <Route >
      <Route path='/' element={<Layout />}>
           <Route index element={<Home />}  loader={ProductsData} />
+          <Route path='cart' element={<Cart />} />
+          <Route path='favorit' element={<Favorit />} />
      </Route>
      
 
-     <Route path='cart' element={<Cart />} />
      <Route path='registr' element={<Register />} />
      <Route path='login' element={<Login />} />
-     <Route path='favorit' element={<Favorit />} />
 
     </Route>
  )) 

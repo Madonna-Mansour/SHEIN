@@ -12,7 +12,7 @@ const Favorit = () => {
     if(products.length ===0){
         return(
       <div className="flex justify-center items-center h-[100vh]">
-          <h1 className='text-[40px] mr-4'>There are no favorite products, go to browse products </h1>
+          <h1 className='t sm:text-[20px] md:text-[30px] mr-4'>There are no favorite products, go to browse products </h1>
           <Link to={"/"} className='text-[40px]'> <FaShopify /></Link>  
       </div>
         )
