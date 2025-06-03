@@ -19,10 +19,10 @@ const Favorit = () => {
     }
 
   return (
-       <div className="h-[100vh]">
-             <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 xl:grid-cols-4 flex'>
+       <div className="h-[100vh] pt-40">
+            <div className='container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
                  {products.map((product) => (
-                   <div key={product.id} className="m-4 shadow-md p-10">
+                   <div key={product.id}  className="flex flex-col justify-between box-content  p-4  mb-4 bg-white rounded-lg shadow-md">
                          <h1>{product.title}</h1>
                          <div className="">
                            <img className='w-[100px] my-6' src={product.image} alt="" />
